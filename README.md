@@ -1,4 +1,4 @@
-# Camera-SwiftUI
+# Kaamera
 
 SwiftUI has proven to be a really awesome new framework to build and design apps in a quick and reliable way. Nonetheless, it is still in its infancy and Apple needs to add more support for other framework integrations as it did recently with the new Sign In With Apple button in SwiftUI 2.0. In this project we'll learn how to integrate AVFoundation's AVCameraSession with SwiftUI so we can create reusable, extendable modern components for apps that need to use our device's cameras.
 

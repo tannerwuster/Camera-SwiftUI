@@ -35,14 +35,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A9E714B528B7892F00A273A7 /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9E714B528B7892F00A273A7 /* Kaamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kaamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E714B828B7892F00A273A7 /* DemoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAppApp.swift; sourceTree = "<group>"; };
 		A9E714BA28B7892F00A273A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A9E714BC28B7893100A273A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9E714BF28B7893100A273A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A9E714C528B7893100A273A7 /* DemoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9E714C528B7893100A273A7 /* KaameraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KaameraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E714C928B7893100A273A7 /* DemoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAppTests.swift; sourceTree = "<group>"; };
-		A9E714CF28B7893100A273A7 /* DemoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9E714CF28B7893100A273A7 /* KaameraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KaameraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E714D328B7893100A273A7 /* DemoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAppUITests.swift; sourceTree = "<group>"; };
 		A9E714D528B7893100A273A7 /* DemoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A9E714E328B7898200A273A7 /* Camera-SwiftUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "Camera-SwiftUI"; path = ..; sourceTree = "<group>"; };
@@ -89,9 +89,9 @@
 		A9E714B628B7892F00A273A7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A9E714B528B7892F00A273A7 /* DemoApp.app */,
-				A9E714C528B7893100A273A7 /* DemoAppTests.xctest */,
-				A9E714CF28B7893100A273A7 /* DemoAppUITests.xctest */,
+				A9E714B528B7892F00A273A7 /* Kaamera.app */,
+				A9E714C528B7893100A273A7 /* KaameraTests.xctest */,
+				A9E714CF28B7893100A273A7 /* KaameraUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -150,9 +150,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A9E714B428B7892F00A273A7 /* DemoApp */ = {
+		A9E714B428B7892F00A273A7 /* Kaamera */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A9E714D928B7893100A273A7 /* Build configuration list for PBXNativeTarget "DemoApp" */;
+			buildConfigurationList = A9E714D928B7893100A273A7 /* Build configuration list for PBXNativeTarget "Kaamera" */;
 			buildPhases = (
 				A9E714B128B7892F00A273A7 /* Sources */,
 				A9E714B228B7892F00A273A7 /* Frameworks */,
@@ -162,17 +162,17 @@
 			);
 			dependencies = (
 			);
-			name = DemoApp;
+			name = Kaamera;
 			packageProductDependencies = (
 				A9E714E528B789A100A273A7 /* Camera-SwiftUI */,
 			);
 			productName = DemoApp;
-			productReference = A9E714B528B7892F00A273A7 /* DemoApp.app */;
+			productReference = A9E714B528B7892F00A273A7 /* Kaamera.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A9E714C428B7893100A273A7 /* DemoAppTests */ = {
+		A9E714C428B7893100A273A7 /* KaameraTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A9E714DC28B7893100A273A7 /* Build configuration list for PBXNativeTarget "DemoAppTests" */;
+			buildConfigurationList = A9E714DC28B7893100A273A7 /* Build configuration list for PBXNativeTarget "KaameraTests" */;
 			buildPhases = (
 				A9E714C128B7893100A273A7 /* Sources */,
 				A9E714C228B7893100A273A7 /* Frameworks */,
@@ -183,14 +183,14 @@
 			dependencies = (
 				A9E714C728B7893100A273A7 /* PBXTargetDependency */,
 			);
-			name = DemoAppTests;
+			name = KaameraTests;
 			productName = DemoAppTests;
-			productReference = A9E714C528B7893100A273A7 /* DemoAppTests.xctest */;
+			productReference = A9E714C528B7893100A273A7 /* KaameraTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A9E714CE28B7893100A273A7 /* DemoAppUITests */ = {
+		A9E714CE28B7893100A273A7 /* KaameraUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A9E714DF28B7893100A273A7 /* Build configuration list for PBXNativeTarget "DemoAppUITests" */;
+			buildConfigurationList = A9E714DF28B7893100A273A7 /* Build configuration list for PBXNativeTarget "KaameraUITests" */;
 			buildPhases = (
 				A9E714CB28B7893100A273A7 /* Sources */,
 				A9E714CC28B7893100A273A7 /* Frameworks */,
@@ -201,9 +201,9 @@
 			dependencies = (
 				A9E714D128B7893100A273A7 /* PBXTargetDependency */,
 			);
-			name = DemoAppUITests;
+			name = KaameraUITests;
 			productName = DemoAppUITests;
-			productReference = A9E714CF28B7893100A273A7 /* DemoAppUITests.xctest */;
+			productReference = A9E714CF28B7893100A273A7 /* KaameraUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -229,7 +229,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A9E714B028B7892F00A273A7 /* Build configuration list for PBXProject "DemoApp" */;
+			buildConfigurationList = A9E714B028B7892F00A273A7 /* Build configuration list for PBXProject "Kaamera" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -242,9 +242,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A9E714B428B7892F00A273A7 /* DemoApp */,
-				A9E714C428B7893100A273A7 /* DemoAppTests */,
-				A9E714CE28B7893100A273A7 /* DemoAppUITests */,
+				A9E714B428B7892F00A273A7 /* Kaamera */,
+				A9E714C428B7893100A273A7 /* KaameraTests */,
+				A9E714CE28B7893100A273A7 /* KaameraUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -307,12 +307,12 @@
 /* Begin PBXTargetDependency section */
 		A9E714C728B7893100A273A7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A9E714B428B7892F00A273A7 /* DemoApp */;
+			target = A9E714B428B7892F00A273A7 /* Kaamera */;
 			targetProxy = A9E714C628B7893100A273A7 /* PBXContainerItemProxy */;
 		};
 		A9E714D128B7893100A273A7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A9E714B428B7892F00A273A7 /* DemoApp */;
+			target = A9E714B428B7892F00A273A7 /* Kaamera */;
 			targetProxy = A9E714D028B7893100A273A7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -440,7 +440,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DemoApp/Preview Content\"";
-				DEVELOPMENT_TEAM = YAFLRP6JUR;
+				DEVELOPMENT_TEAM = 2STHX823T6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "DemoApp needs to access your camera to take pictures.";
@@ -453,8 +453,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = rry.com.DemoApp;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaartgroup.Kaamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -470,7 +470,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DemoApp/Preview Content\"";
-				DEVELOPMENT_TEAM = YAFLRP6JUR;
+				DEVELOPMENT_TEAM = 2STHX823T6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "DemoApp needs to access your camera to take pictures.";
@@ -483,8 +483,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = rry.com.DemoApp;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaartgroup.Kaamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -508,7 +508,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoApp.app/DemoApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kaamera.app/Kaamera";
 			};
 			name = Debug;
 		};
@@ -528,7 +528,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoApp.app/DemoApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kaamera.app/Kaamera";
 			};
 			name = Release;
 		};
@@ -571,7 +571,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A9E714B028B7892F00A273A7 /* Build configuration list for PBXProject "DemoApp" */ = {
+		A9E714B028B7892F00A273A7 /* Build configuration list for PBXProject "Kaamera" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A9E714D728B7893100A273A7 /* Debug */,
@@ -580,7 +580,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A9E714D928B7893100A273A7 /* Build configuration list for PBXNativeTarget "DemoApp" */ = {
+		A9E714D928B7893100A273A7 /* Build configuration list for PBXNativeTarget "Kaamera" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A9E714DA28B7893100A273A7 /* Debug */,
@@ -589,7 +589,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A9E714DC28B7893100A273A7 /* Build configuration list for PBXNativeTarget "DemoAppTests" */ = {
+		A9E714DC28B7893100A273A7 /* Build configuration list for PBXNativeTarget "KaameraTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A9E714DD28B7893100A273A7 /* Debug */,
@@ -598,7 +598,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A9E714DF28B7893100A273A7 /* Build configuration list for PBXNativeTarget "DemoAppUITests" */ = {
+		A9E714DF28B7893100A273A7 /* Build configuration list for PBXNativeTarget "KaameraUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A9E714E028B7893100A273A7 /* Debug */,

@@ -75,21 +75,40 @@ final class CameraModel: ObservableObject {
     }
 }
 
+extension Color {
+    init(red: Int, green: Int, blue: Int) {
+        assert(red >= 0 && red <= 255, "Invalid red component")
+        assert(green >= 0 && green <= 255, "Invalid green component")
+        assert(blue >= 0 && blue <= 255, "Invalid blue component")
+        
+        self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0)
+    }
+    
+    init(rgb: Int) {
+        self.init(
+            red: (rgb >> 16) & 0xFF,
+            green: (rgb >> 8) & 0xFF,
+            blue: rgb & 0xFF
+        )
+    }
+}
+
 struct CameraView: View {
     @StateObject var model = CameraModel()
     
     @State var currentZoomFactor: CGFloat = 1.0
-    
+    let kaartGrey = Color(rgb: 0x91a5ac)
+    let kaartOrange = Color(rgb: 0xf4753c)
     var captureButton: some View {
         Button(action: {
             model.capturePhoto()
         }, label: {
             Circle()
-                .foregroundColor(.white)
+                .foregroundColor(kaartGrey)
                 .frame(width: 80, height: 80, alignment: .center)
                 .overlay(
                     Circle()
-                        .stroke(Color.black.opacity(0.8), lineWidth: 2)
+                        .stroke(kaartOrange.opacity(0.8), lineWidth: 2)
                         .frame(width: 65, height: 65, alignment: .center)
                 )
         })
@@ -103,7 +122,12 @@ struct CameraView: View {
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 60, height: 60)
                     .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
-                    .animation(.spring())
+                //                    .animation(.spring())
+                    .animation(
+                        .easeInOut(duration: 1)
+                        .repeatForever(autoreverses: false),
+                        value: 1.0
+                    )
                 
             } else {
                 RoundedRectangle(cornerRadius: 10)
@@ -174,7 +198,11 @@ struct CameraView: View {
                                     }
                                 }
                             )
-                            .animation(.easeInOut)
+                            .animation(
+                                .easeInOut(duration: 1)
+                                .repeatForever(autoreverses: false),
+                                value: 1.0
+                            )
                         
                         
                         HStack {
